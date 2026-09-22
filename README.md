@@ -3,7 +3,10 @@
 Lectura bilingüe sincronizada (italiano–castellano) de los cuatro primeros capítulos
 de *San Paolo della Croce* de Zoffoli.
 
-Sitio publicado: <https://paolo.glosasdeguardia.es/>
+Sitio publicado: <https://josuantonsanz.github.io/paolo_test/>
+
+Sin dominio propio: no añadas un fichero `CNAME` ni fijes un dominio en los ajustes de
+Pages, porque el repositorio se sirve en la URL por defecto de GitHub Pages.
 
 ## Aviso: contenido generado
 
