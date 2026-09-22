@@ -10,7 +10,7 @@
   var STORE = "zoffoli.sincro.prefs";
 
   var rows = Array.prototype.slice.call(document.querySelectorAll(".row.pair"));
-  var pageRows = Array.prototype.slice.call(document.querySelectorAll(".row.page-row"));
+  var pageMarks = Array.prototype.slice.call(document.querySelectorAll("[data-pagejump]"));
   if (!rows.length) return;
 
   var bar = document.querySelector(".topbar");
@@ -107,7 +107,7 @@
 
   /* ------------------------------------------------------------- teclado */
   function jumpToPage(delta) {
-    var pages = pageRows.map(function (el) { return el.getBoundingClientRect().top + window.scrollY; });
+    var pages = pageMarks.map(function (el) { return el.getBoundingClientRect().top + window.scrollY; });
     if (!pages.length) return;
     var here = window.scrollY;
     var index = nearest(here + 4, pages);

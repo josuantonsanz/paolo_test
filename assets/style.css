@@ -138,21 +138,8 @@ a { color: var(--accent); }
   100% { background: transparent; }
 }
 
-/* Marca de página impresa: separador a todo lo ancho, a la misma altura que el
-   corte de página de las dos columnas. */
-.row.page-row {
-  display: block;
-  margin: 0.5rem calc(-1 * var(--pad)) 0.7rem;
-  padding: 0 var(--pad);
-  text-align: center;
-  border-top: 1px solid var(--line-soft);
-  font-family: system-ui, sans-serif;
-  font-size: max(var(--min-ui), 0.68rem);
-  color: var(--muted);
-  letter-spacing: 0.1em;
-  scroll-margin-top: 7.5rem;
-}
-.row.page-row span { background: var(--bg); padding: 0 0.5rem; position: relative; top: -0.62em; }
+/* Marca de página impresa: ficha dentro del texto italiano, en el punto del corte.
+   La columna castellana no la lleva. */
 .pb-inline {
   font-family: system-ui, sans-serif;
   font-size: max(var(--min-ui), 0.62em);
@@ -299,7 +286,6 @@ body.hide-src .row.pair { max-width: 46rem; margin: 0 auto var(--para-gap); }
 @media print {
   .topbar { display: none; }
   body { background: #fff; font-size: 10.5pt; }
-  .row.page-row { border-top-color: #ccc; }
   .row.pair { break-inside: avoid; }
   a { color: inherit; text-decoration: none; }
 }
